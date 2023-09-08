@@ -1,0 +1,95 @@
+//so much stuff to do, i put them on one. I probably shouldnt do that, but it was like 5 differrent things. I wanted them to be in one place
+using System;
+
+
+//Add some more variables and functions
+public class ClassWithVariables
+{
+    public int number = 2;
+    public string userName = "Bob";
+    public bool myBool = true;
+    string myText = ("Coding hurts my brain sometimes")
+}
+
+public class ClassWithFunctions
+{
+    public void RunFunction()
+    {
+        Console.WriteLine("who knows if im doing this right");
+        Console.WriteLine("kinda dont know what i'm doing but thats fine");
+    }
+}   
+
+
+
+
+//correct errors
+public class CorrectTheErrorsDone
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("HW");
+	}
+}
+
+
+
+
+// change "HW" to "Hello World"
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Hello World");
+    }    
+}
+
+
+
+
+
+//make my own hero using classes, all these words being throw around with different meanings is overwhelming me a little								
+public class HeroStats
+{
+    public Hero heroOne;
+    public Hero heroTwo;
+	public Hero heroThree;
+	
+    public void Main()
+    {
+        heroOne = new Hero();
+        heroTwo = new Hero();
+		heroThree = new Hero();
+		
+		
+		//stats
+        heroOne.health = 20;
+        heroOne.powerLevel = 4;
+		
+        heroTwo.health = 10;
+        heroTwo.powerLevel = 6;
+		
+		heroThree.health = 1;
+		heroThree.powerLevel = 9;
+		
+		
+		//hero 1
+		Console.WriteLine("Hero One");
+        Console.WriteLine(heroOne.health);
+        Console.WriteLine(heroOne.powerLevel);
+		
+		//hero 2
+		Console.WriteLine("Hero Two");
+        Console.WriteLine(heroTwo.health);
+        Console.WriteLine(heroTwo.powerLevel);
+		
+		//hero 3
+		Console.WriteLine("Hero Three");
+        Console.WriteLine(heroThree.health);
+        Console.WriteLine(heroThree.powerLevel);
+    }
+}
+public class Hero {
+    public int health;
+    public int powerLevel;
+}
