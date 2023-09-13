@@ -1,0 +1,79 @@
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+    
+
+
+
+
+    //Insert the temp here!
+      int temp = 29;
+      
+if (temp > 30) 
+{
+  Console.WriteLine("Drink lots of liquids, Don't get dehydrated! Thats bad");
+}
+else
+{
+  Console.WriteLine("Bundle up or you'll freeze");
+}
+
+
+
+
+
+
+    //Insert your score percentage here!
+      int score = 94;
+      
+      
+if (score < 10) 
+{
+  Console.WriteLine("Did you do this on purpose? Im kind of impressed (0-10 F)");
+} 
+else if (score < 20) 
+{
+  Console.WriteLine("You can have my score instead, I insist (11-20 F)");
+} 
+else if (score < 30) 
+{
+  Console.WriteLine("Oof, all those hours of studying were on the wrong unit, wernt they? (21-30 F)");
+}
+else if (score < 40) 
+{
+  Console.WriteLine("Didn't sleep? Yeah me too (31-40 F)");
+}
+else if (score < 50) 
+{
+  Console.WriteLine("You almost got something besides a F, but not quite (41-50 F)");
+}
+else if (score < 60) 
+{
+  Console.WriteLine("ooooo, so close. Whats the point in studying if your brain cant process the questions after an all nighter? (F)");
+}
+
+else if (score < 70) 
+{
+  Console.WriteLine("You passed!! ALthough some will still say they failed...(D)");
+}
+else if (score < 80) 
+{
+  Console.WriteLine(" C's get Degree's (C)");
+}
+else if (score < 90) 
+{
+  Console.WriteLine("Not the best, but still a great acomplishment (B)");
+}
+else
+{
+  Console.WriteLine("you must eat this unit for breakfast (A)");
+}
+
+     }
+  }
+}
