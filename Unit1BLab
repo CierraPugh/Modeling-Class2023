@@ -12,19 +12,34 @@ namespace MyApplication
 
 
     //Insert the temp here!
-      int temp = 29;
+      int tempc = -20;
       
-if (temp > 30) 
+      // c/f -> -17.9/0 ... 0/32 ... 18.3/65 ... 37.7/100 ... 55.6/132
+      
+if (tempc < -17.9) //below f 0
 {
-  Console.WriteLine("Drink lots of liquids, Don't get dehydrated! Thats bad");
+  Console.WriteLine("Dude, either you get a warm ride, or call out of class... or hope its not windy...(c -18...) (f -1...)");
 }
-else
+else if (tempc < 0)
 {
-  Console.WriteLine("Bundle up or you'll freeze");
+  Console.WriteLine("Freezing, this is when snow is able to form... and hail(c -17.9 - 0) (f 0 - 32)");
 }
-
-
-
+else if (tempc < 18.3)
+{
+  Console.WriteLine("Oof, just above freezing. I hope you're not that one kid wearing shorts and no sleeves, I know you're cold (c 1 - 18.3) (f 33 - 65)");
+}
+else if (tempc < 37.7)
+{
+  Console.WriteLine("Perfect temp range to live, on the lower days you can have a jacket, while upper days have sunscrean and shorts(c 18.4 - 37.7) (f 66 - 100)");
+}
+else if (tempc < 55.6)
+{
+  Console.WriteLine("Do you need help? Are you stuck in an oven? Lost in Death Vally? (c 37.8 - 55.6) (f 101 - 132)");
+}
+else //boiled alive
+{
+  Console.WriteLine(" Where are you? Mars?(c 55.6...) (f 132...)");
+}
 
 
 
@@ -42,7 +57,7 @@ else if (score < 20)
 } 
 else if (score < 30) 
 {
-  Console.WriteLine("Oof, all those hours of studying were on the wrong unit, wernt they? (21-30 F)");
+  Console.WriteLine("Oof, all those hours of studying were waisted on the wrong unit, wern't they? (21-30 F)");
 }
 else if (score < 40) 
 {
@@ -54,7 +69,7 @@ else if (score < 50)
 }
 else if (score < 60) 
 {
-  Console.WriteLine("ooooo, so close. Whats the point in studying if your brain cant process the questions after an all nighter? (F)");
+  Console.WriteLine("ooooo, so close. Next time, don't do an all nighter. Understanding the queations is much more important than knowing the answer. (F)");
 }
 
 else if (score < 70) 
@@ -69,6 +84,7 @@ else if (score < 90)
 {
   Console.WriteLine("Not the best, but still a great acomplishment (B)");
 }
+// score 90-100
 else
 {
   Console.WriteLine("you must eat this unit for breakfast (A)");
