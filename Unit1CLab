@@ -1,0 +1,59 @@
+another week another cloding sesh
+
+//stack 1 1ns, 2 2s, 3 3s, etc
+
+// my notes :)c
+using System;
+
+public class Program
+{
+	public void Main()
+	{
+		string[] cars = {"1", "2", "3", "4", "5"};
+		// writes the length, writes them all in order, and can put words before and after the list
+		Console.WriteLine(cars.Length);
+		foreach(var car in cars) {
+			Console.WriteLine("I love the number " + car);
+		} // what gets writen is "I love the number 1." then bwlow with the number 2, etc
+		
+	}
+}
+
+
+
+
+public class Program
+{
+	public void Main()
+	{
+		string[] cars = {"1", "22", "333", "4444", "55555"};
+		// writes the length, writes them all in order, and can put words before and after the list
+		foreach(var car in cars) {
+			Console.WriteLine(car);
+		}
+		
+	}
+}
+// I litteraly cant figure it out sorry
+
+//this is as far as i got. i spent so much time on this i cant
+
+namespace the struggle
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+// write amount of rows \/ (-1)
+for (int row = 1; row < 6; row++) 
+{
+  Console.WriteLine(row);
+  }
+  
+
+    }
+  }
+}
+
+
+
