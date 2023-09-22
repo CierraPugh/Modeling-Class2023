@@ -44,9 +44,9 @@ public class Program
     int guessC = 7;
 		
 		
-		
-		
+	  Console.WriteLine("I Guessed:" );	
     
+		
     //guess A
 if (guessA < 1) //0 or below
 {
@@ -54,7 +54,7 @@ if (guessA < 1) //0 or below
 } 
 else if (guessA < 10) 
 {
-  Console.WriteLine("I Guessed " + guessA);
+  Console.WriteLine(guessA);
 } 
 else//11 or higher
 {
@@ -68,7 +68,7 @@ if (guessB < 1) //0 or below
 } 
 else if (guessB < 10) 
 {
-  Console.WriteLine("I Guessed " + guessB);
+  Console.WriteLine(guessB);
 } 
 else//11 or higher
 {
@@ -83,7 +83,7 @@ if (guessC < 1) //0 or below
 } 
 else if (guessC < 10) 
 {
-  Console.WriteLine("I Guessed " + guessC);
+  Console.WriteLine(guessC);
 } 
 else//11 or higher
 {
