@@ -22,8 +22,8 @@ public class Program
 
 
 
-// use past 1 < 5 < 10 thing to get a max number
-// then get that if else thing if right say something
+// GUESSING GAME!! (cannot read its own randomized number yet)
+
 
 // "save"
 using System;
@@ -32,6 +32,68 @@ public class Program
 {
 	public static void Main()
 	{
+
+		
+		
+		
+	// Now try and guess the number! (Numbers between 1 and 10 please)
+	int guessA = 6;
+		
+    int guessB = 3;
+		
+    int guessC = 7;
+		
+		
+		
+		
+    
+    //guess A
+if (guessA < 1) //0 or below
+{
+  Console.WriteLine("Guess 1 is (too low (" + guessA + ")");
+} 
+else if (guessA < 10) 
+{
+  Console.WriteLine("I Guessed " + guessA);
+} 
+else//11 or higher
+{
+  Console.WriteLine("Guess 1 is too high (" + guessA + ")");
+}
+
+	//guess B
+if (guessB < 1) //0 or below
+{
+  Console.WriteLine("Guess 2 is too low (" + guessB + ")");
+} 
+else if (guessB < 10) 
+{
+  Console.WriteLine("I Guessed " + guessB);
+} 
+else//11 or higher
+{
+  Console.WriteLine("Guess 2 is too high (" + guessB + ")");
+}
+	
+	
+	//guess C
+if (guessC < 1) //0 or below
+{
+  Console.WriteLine("Guess 3 is too low (" + guessC + ")");
+} 
+else if (guessC < 10) 
+{
+  Console.WriteLine("I Guessed " + guessC);
+} 
+else//11 or higher
+{
+  Console.WriteLine("Guess 3 is too high (" + guessC + ")");
+}
+		
+		
+		//random number code
+		 Console.WriteLine(" ");
+		
 		{
 		Console.WriteLine("Randomized Number:");
         }
@@ -43,26 +105,17 @@ for (int randnum = 0; randnum < 1; randnum++)
     Console.WriteLine(rnd.Next(1, 10));//makes a random number between 1 and 10
 }
 {
-	
-	//NOTE: RANDOM GENORATOR AND TEXT IS WORKING. you dont have to check
-	
-	
-		// insert if else if you got it (aka guess 3 was right etc)
-	
-	// guess 1
-	int guessA = 11;
-	
-	
-	//guess 2
-	int guessB = 11;
-	
-	
-	//guess 3
-	int guessC = 11;
-	
-	
-	
-}
+	//NOTE: RANDOM GENORATOR AND TEXT IS WORKING. dont mess with it >:C
+			   Console.WriteLine(" "); //space to seperate
+	{
+
+
 		
-	}
+		{
+				   Console.WriteLine("Did you guess it? You have a 3/10 chance to get it");
+		}
+	
+   }
+  }
+ }
 }
