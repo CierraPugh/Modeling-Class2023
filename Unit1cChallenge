@@ -1,0 +1,68 @@
+//at least i knew how to do one of them
+
+
+
+using System;
+					
+public class Program
+{
+	public static void Main()
+
+
+	{ //enter your favorite foods here!!
+		string[] cars = {"food 1", "food 2", "Food 3"};
+        foreach (string i in cars) 
+
+         Console.WriteLine("I love " + i);
+
+	}
+}
+
+
+
+
+
+// use past 1 < 5 < 10 thing to get a max number
+// then get that if else thing if right say something
+
+// "save"
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		{
+		Console.WriteLine("Randomized Number:");
+        }
+		//stole this from the internet, thanks internet I can always count on you
+     Random rnd = new Random();
+
+for (int randnum = 0; randnum < 1; randnum++)
+{
+    Console.WriteLine(rnd.Next(1, 10));//makes a random number between 1 and 10
+}
+{
+	
+	//NOTE: RANDOM GENORATOR AND TEXT IS WORKING. you dont have to check
+	
+	
+		// insert if else if you got it (aka guess 3 was right etc)
+	
+	// guess 1
+	int guessA = 11;
+	
+	
+	//guess 2
+	int guessB = 11;
+	
+	
+	//guess 3
+	int guessC = 11;
+	
+	
+	
+}
+		
+	}
+}
