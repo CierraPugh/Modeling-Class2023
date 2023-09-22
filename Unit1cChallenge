@@ -37,11 +37,11 @@ public class Program
 		
 		
 	// Now try and guess the number! (Numbers between 1 and 10 please, i will know)
-	int guessA = 6;
+	int guessA = 1;
 		
-    int guessB = 3;
+    int guessB = 2;
 		
-    int guessC = 7;
+    int guessC = 3;
 		
 		
 	  Console.WriteLine("I Guessed:" );	
