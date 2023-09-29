@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
    //speeds
    [SerializeField] private float moveSpeed = 5f;
    [SerializeField] private float jumpForce = 5f;
    [SerializeField] private float gravity = 9.81f;
+   [SerializeField] private float crouchSpeed = 3f;
+
 
    private CharacterController controller;
    private Vector3 moveDirection;
@@ -17,6 +19,7 @@ public class NewBehaviourScript : MonoBehaviour
    private float horizontalInput;
    private float verticalInput;
    private float jumpInput;
+   private float crouchInput;
 
 
 
@@ -43,16 +46,19 @@ public class NewBehaviourScript : MonoBehaviour
      jumpInput = Input.GetButtonDown("Jump");
          if (isJumping);
 		 	{
-        		controller.isGrounded(gravity * Time.deltaTime);
+        		controller.isGrounded(horizontalInput * gravity * Time.deltaTime);
 	    		isJumping = true;
 		 	}
-		 
-		 else;
+		 else
 		 	{
-	     		moveDirection.y(jumpForce * Time.deltaTime);
+	     		moveDirection.y(horizontalInput * jumpForce * Time.deltaTime);
 	     		isJumping = false;
 		 	}
-     
+    
+
+
+    crouchInput = Input.GetButtonLeftShift("Crouch");
+    controller.Move(moveDirection * crouchSpeed * Time.deltaTime);
 
 
 	}
