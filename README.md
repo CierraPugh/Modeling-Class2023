@@ -1,2 +1,2 @@
 # Modeling-Class
-Hello! Another year of modeling! The Fish has been moved!
+Hello! Another year of modeling! Dispite how amazing this laptop is, when and after Unity is opened, my flies perpeutaly say "Working on it", to fix this i must restart my system. Also dispite GitKraken being connected by that key thing, I have pushed many things over here that seemingly dont show up; so in teh meantime ill be uploading by hand as that seems easier untill I can find out how to fix it
