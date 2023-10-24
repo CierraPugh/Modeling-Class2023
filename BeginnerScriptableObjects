@@ -1,0 +1,75 @@
+//the turn in wants my version of the scripts
+//s0 im just gonna past them here
+
+
+
+
+//Flow Data
+
+using UnityEngine;
+[CreateAssetMenu]
+
+public class FlowData : ScriptableObject
+{
+    public float value;
+
+    public void UpdateValue(float num)
+    {
+        value += num;
+    }
+    
+}
+
+
+
+
+
+
+//Text Label Behavior
+
+
+using System.Globalization;
+using UnityEngine;
+using UnityEngine.UI;
+
+[RequireComponent(typeof(Text))]
+public class TextLabelBehavior : MonoBehaviour
+{
+   public Text label;
+   public FlowData dataObj;
+
+
+   private void Start()
+   {
+     label = GetComponent<Text>();
+     UpdateLabel();
+   }
+
+
+   public void UpdateLabel ()
+   {
+         label.text = dataObj.value.ToString(CultureInfo.InvariantCulture);
+
+   }
+
+
+}
+
+
+
+
+//Trigger Behavior
+
+
+using UnityEngine;
+using UnityEngine.Events;
+
+public class ScriptTriggerBehaviour : MonoBehaviour
+{
+   public UnityEvent triggerEnterEvent;
+
+   public void OnTriggerEnter(Collider other)
+   {
+    triggerEnterEvent.Invoke();
+   }
+}
